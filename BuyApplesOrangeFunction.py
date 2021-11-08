@@ -7,3 +7,18 @@ def display(nickname_):
 
 nickname = welcomeUser()
 display(nickname)
+
+def askForAppleOrange():
+    global applePrice
+    applePrice = 20
+    global applesYouWantToBuy
+    applesYouWantToBuy = int(input("How many apple/s you want to add in your cart?: "))
+    costOfApple = int(applesYouWantToBuy) * applePrice
+    global orangePrice
+    orangePrice = 25
+    global orangesYouWantToBuy
+    orangesYouWantToBuy = input("How many orange/s you want to add in your cart?: ")
+    costOfOrange = int(orangesYouWantToBuy) * orangePrice
+    global totalAmount
+    totalAmount = costOfApple + costOfOrange
+    return costOfApple, costOfOrange, totalAmount
