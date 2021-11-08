@@ -15,4 +15,12 @@ def askMoneyAndApple():
     priceOfApple = int(input("What is the current cost of an apple?: "))
     return money, priceOfApple
 
+def applesAndChange():
+    global numOfApple_
+    numOfApple_ = money//priceOfApple
+    global change_
+    change_ = money%priceOfApple
+    return numOfApple_, change_
+
 money, priceOfApple = askMoneyAndApple()
+numOfApple_, change_ = applesAndChange()
