@@ -9,8 +9,10 @@ nickname = welcomeUser()
 display(nickname)
 
 def askMoneyAndApple():
-    money = input("How much money do you have on hand?: ")
-    priceOfApple = input("What is the current cost of an apple?: ")
+    global money
+    money = int(input("How much money do you have on hand?: "))
+    global priceOfApple
+    priceOfApple = int(input("What is the current cost of an apple?: "))
     return money, priceOfApple
 
 money, priceOfApple = askMoneyAndApple()
