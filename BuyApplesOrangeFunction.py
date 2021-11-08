@@ -27,3 +27,4 @@ def display(totalAmount):
     print(f"The total amount is {totalAmount}")
 
 costOfApple, costOfOrange, totalAmount = askForAppleOrange()
+display(totalAmount)
