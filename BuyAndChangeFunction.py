@@ -7,3 +7,10 @@ def display(nickname_):
 
 nickname = welcomeUser()
 display(nickname)
+
+def askMoneyAndApple():
+    money = input("How much money do you have on hand?: ")
+    priceOfApple = input("What is the current cost of an apple?: ")
+    return money, priceOfApple
+
+money, priceOfApple = askMoneyAndApple()
