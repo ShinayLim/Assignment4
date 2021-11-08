@@ -26,7 +26,7 @@ def displayAmount(totalAmount):
 def continueTransaction():
     answer = input("Do you want to continue your transaction? ").upper()
     if answer == "YES":
-        print("The parcel is on your way. Thank you and come again!")
+        print("The parcel is on your way please prepare your cash. Thank you and come again!")
     elif answer == "NO":
         print("Thank you for your time please come again!")
     return answer
