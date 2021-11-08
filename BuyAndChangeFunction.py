@@ -22,5 +22,9 @@ def applesAndChange():
     change_ = money%priceOfApple
     return numOfApple_, change_
 
+def displayOutput(numOfApple_, change_):
+    print(f"You can buy {numOfApple_} apples and your change is {change_} pesos.")
+
 money, priceOfApple = askMoneyAndApple()
 numOfApple_, change_ = applesAndChange()
+displayOutput(numOfApple_, change_)
