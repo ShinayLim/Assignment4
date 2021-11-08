@@ -5,9 +5,6 @@ def welcomeUser():
 def display(nickname_):
     print(f"Good day {nickname_}!. Please enjoy your shopping.")
 
-nickname = welcomeUser()
-display(nickname)
-
 def askForAppleOrange():
     global applePrice
     applePrice = 20
@@ -23,8 +20,10 @@ def askForAppleOrange():
     totalAmount = costOfApple + costOfOrange
     return costOfApple, costOfOrange, totalAmount
 
-def display(totalAmount):
+def displayAmount(totalAmount):
     print(f"The total amount is {totalAmount}")
 
+nickname = welcomeUser()
+display(nickname)
 costOfApple, costOfOrange, totalAmount = askForAppleOrange()
-display(totalAmount)
+displayAmount(totalAmount)
