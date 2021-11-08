@@ -21,9 +21,18 @@ def askForAppleOrange():
     return costOfApple, costOfOrange, totalAmount
 
 def displayAmount(totalAmount):
-    print(f"The total amount is {totalAmount}")
+    print(f"The total amount is {totalAmount}.")
+
+def continueTransaction():
+    answer = input("Do you want to continue your transaction? ").upper()
+    if answer == "YES":
+        print("The parcel is on your way. Thank you and come again!")
+    elif answer == "NO":
+        print("Thank you for your time please come again!")
+    return answer
 
 nickname = welcomeUser()
 display(nickname)
 costOfApple, costOfOrange, totalAmount = askForAppleOrange()
 displayAmount(totalAmount)
+continueTransaction()
