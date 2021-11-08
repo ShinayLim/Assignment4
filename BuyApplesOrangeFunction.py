@@ -22,3 +22,5 @@ def askForAppleOrange():
     global totalAmount
     totalAmount = costOfApple + costOfOrange
     return costOfApple, costOfOrange, totalAmount
+
+costOfApple, costOfOrange, totalAmount = askForAppleOrange()
